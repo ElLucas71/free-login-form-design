@@ -179,3 +179,7 @@ input[type=submit] {
     position:relative;
 
 }
+
+.error {
+    border: 1px solid red;
+}
