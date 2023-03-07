@@ -8,6 +8,9 @@
 	<title>Login page :)</title>
 </head>
 <body>
+<form id="form" method="post" name="form" onsubmit="return validated()">
+
+	
 	<div class="all">
 	<div class="rectangle">
 		
@@ -18,18 +21,20 @@
 			<div class="box">
 				<div class="boxes">
 					<h3>Email Adress</h3>
-					<input class="valores error" type="email" placeholder="you@example.com">
+					<input class="valores" id="email" type="email" placeholder="you@example.com">
 					<br>
-					<span style="color: red; font-size: 12px;">No es un correo electrónico</span>
+					<span style="color: red; font-size: 12px; display: none;" id="email_error">Please check your email, example@example.com</span>
 				</div>
 			</div>
 
 			<div class="box">
 				<div class="boxes">
 					<a href="#" class="forgot">Forgot Password?</a>
-					Password
+					<h3>Password</h3>
 					
-					<input class="valores" type="password" placeholder="Enter 6 character or more">
+					<input class="valores" type="password" id="password" placeholder="Enter 6 character or more">
+					<br>
+					<span style="color: red; font-size: 12px; display: none;" id="pass_error">Please enter 6 character or more</span>
 				</div>
 			</div>
 			<input type="checkbox" name=""><span class="remember">Remember me</span>
@@ -53,6 +58,8 @@
 		<img class="scene" src="assets/images/image.svg">
 	</div>
 </div>
+</form>
+<script src="assets/js/index.js"></script>
 </body>
 
 </html>
