@@ -1,62 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="assets/css/styles.css">
-	<script src="https://kit.fontawesome.com/d8b102993b.js" crossorigin="anonymous"></script>
-	<title>Login page :)</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script src="https://kit.fontawesome.com/d8b102993b.js" crossorigin="anonymous"></script>
+<title>Register account</title>
 </head>
 <body>
 <form id="form" method="post" name="form" onsubmit="return validated()">
 
-	
-	<div class="all">
-	<div class="rectangle">
-		
-		<div class="elements">
-			<h2 class="title">Login</h2>
-			<span class="olvidar">Doesn't have an account yet?</span> <a href="#">Sign Up</a>
 
-			<div class="box">
-				<div class="boxes">
-					<h3>Email Adress</h3>
-					<input class="valores" id="email" type="email" placeholder="you@example.com">
-					<br>
-					<span style="color: red; font-size: 12px; display: none;" id="email_error">Please check your email, example@example.com</span>
-				</div>
-			</div>
+<div class="all">
+<div class="rectangle">
+    
+    <div class="elements">
+        <h2 class="title">SIGN UP</h2>
+        <span class="olvidar">You have any account?</span> <a href="index.html">Sign In</a>
 
-			<div class="box">
-				<div class="boxes">
-					<a href="#" class="forgot">Forgot Password?</a>
-					<h3>Password</h3>
-					
-					<input class="valores" type="password" id="password" placeholder="Enter 6 character or more">
-					<br>
-					<span style="color: red; font-size: 12px; display: none;" id="pass_error">Please enter 6 character or more</span>
-				</div>
-			</div>
-			<input type="checkbox" name=""><span class="remember">Remember me</span>
+        <div class="grid">
+            
+            
+            <div class="box">
+                <div class="boxes">
+                    <h3>Username</h3>
+                    <input class="valores" id="username" type="email" placeholder="Insert your username">
+                    <br>
+                    <span style="color: red; font-size: 12px; display: none;" id="username_error">Please check your email,
+                        example@example.com</span>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="boxes">
+                    <h3>Name and surname</h3>
+                    <input class="valores" id="username" type="email" placeholder="Insert your name">
+                    <br>
+                    <span style="color: red; font-size: 12px; display: none;" id="username_error">Please check your email,
+                        example@example.com</span>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="boxes">
+                    <h3>Password</h3>
+            
+                    <input class="valores" type="password" id="password" placeholder="Enter 6 character or more">
+                    <br>
+                    <span style="color: red; font-size: 12px; display: none;" id="pass_error">Please enter 6 character or
+                        more</span>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="boxes">
+                    <h3>Repeat Password</h3>
+            
+                    <input class="valores" type="password" id="repeatpassword" placeholder="Enter 6 character or more">
+                    <br>
+                    <span style="color: red; font-size: 12px; display: none;" id="pass_error2">The password is not same</span>
+                </div>
+            </div>
 
-			<input type="submit" name="" class="login" value="LOGIN">
-			<br>
-			<span class="another">or login with</span>
-			<br>
-			
-			<a href="#" class="google">
-				<i class="fa-brands fa-google googleicn"></i>
-				<b>Google</b>
-			</a>
+            <div class="box">
+                <div class="boxes">
+                    <h3>Email Adress</h3>
+                    <input class="valores" id="email" type="email" placeholder="you@example.com">
+                    <br>
+                    <span style="color: red; font-size: 12px; display: none;" id="email_error">Please check your email,
+                        example@example.com</span>
+                </div>
+            </div>
+        </div>
+        <input type="checkbox" id="checkbox" name=""><span class="remember">Accept terms and conditions</span>
 
-			<a href="#" class="facebook">
-				<i class="fa-brands fa-facebook-f facebookicn"></i>
-				<b>Facebook</b>
-			</a>
-			
-		</div>
-		<img class="scene" src="assets/images/image.svg">
-	</div>
+        <input type="submit" name="" class="login" value="SIGN UP">
+        <span style="color: red; font-size: 12px; display: none;" id="check_error">The password is not same</span>
+        <br>
+        <span class="another">or sign up</span>
+        <br>
+        
+        <a href="#" class="google">
+            <i class="fa-brands fa-google googleicn"></i>
+            <b>Google</b>
+        </a>
+
+        <a href="#" class="facebook">
+            <i class="fa-brands fa-facebook-f facebookicn"></i>
+            <b>Facebook</b>
+        </a>
+        
+    </div>
+    <img class="scene" src="assets/images/image.svg">
+</div>
 </div>
 </form>
 <script src="assets/js/index.js"></script>
